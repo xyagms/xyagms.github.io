@@ -26,8 +26,8 @@ add_action('after_setup_theme', 'releve_brands_setup');
 
 function releve_brands_assets(): void
 {
-    wp_enqueue_style('releve-brands-main', get_template_directory_uri() . '/assets/css/main.css', [], '2.5.0');
-    wp_enqueue_script('releve-brands-main', get_template_directory_uri() . '/assets/js/main.js', [], '2.5.0', true);
+    wp_enqueue_style('releve-brands-main', get_template_directory_uri() . '/assets/css/main.css', [], '2.6.0');
+    wp_enqueue_script('releve-brands-main', get_template_directory_uri() . '/assets/js/main.js', [], '2.6.0', true);
 }
 add_action('wp_enqueue_scripts', 'releve_brands_assets');
 
