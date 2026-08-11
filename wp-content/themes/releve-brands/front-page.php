@@ -139,5 +139,23 @@ $products = [
             </article>
         </div>
     </section>
+
+    <section id="contact" class="contact-section">
+        <div>
+            <p class="eyebrow">Contact Releve</p>
+            <h2>Questions, orders, or product guidance?</h2>
+            <p>Reach out to Releve Brands directly for product questions, return requests, shipping questions, or help choosing the right natural wellness product.</p>
+            <div class="contact-actions">
+                <a class="button primary" href="mailto:info@relevebrands.com">Email Releve</a>
+                <a class="button secondary" href="tel:8324983411">Call 832-498-3411</a>
+            </div>
+        </div>
+        <div class="contact-card">
+            <h3>Releve Brands</h3>
+            <p><strong>Email</strong><br><a href="mailto:info@relevebrands.com">info@relevebrands.com</a></p>
+            <p><strong>Phone</strong><br><a href="tel:8324983411">832-498-3411</a></p>
+            <p><strong>P.O. Box</strong><br>13531 Will Clayton Pkwy<br>Ste 300 #1040<br>Humble, TX 77346</p>
+        </div>
+    </section>
 </main>
 <?php get_footer(); ?>

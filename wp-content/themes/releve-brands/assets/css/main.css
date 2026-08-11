@@ -460,3 +460,34 @@ body {
   .founder-lower .founder-photo-card img,
   .founder-lower .screenshot-photo-card img { min-height: 460px; }
 }
+
+/* v2.7: real Contact destination */
+.contact-section {
+  max-width: 1340px;
+  margin: clamp(2rem, 6vw, 5rem) auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: stretch;
+  padding: clamp(1.4rem, 5vw, 4rem);
+  border-radius: 2rem;
+  background: linear-gradient(135deg, #06162e, #123c7c 62%, #2e7df6);
+  color: #fff;
+  box-shadow: 0 34px 100px rgba(6,22,46,.24);
+  border: 1px solid rgba(98,230,255,.24);
+}
+.contact-section h2,
+.contact-section h3,
+.contact-section p,
+.contact-section a { color: #fff; }
+.contact-section p { color: rgba(238,247,255,.88); }
+.contact-actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.2rem; }
+.contact-card {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 1.4rem;
+  padding: clamp(1rem, 3vw, 1.6rem);
+  backdrop-filter: blur(16px);
+}
+.contact-card h3 { margin-top: 0; }
+@media(max-width:850px){ .contact-section { grid-template-columns:1fr; } }
