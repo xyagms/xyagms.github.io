@@ -62,28 +62,6 @@ $products = [
         <span>CBD Wellness</span><span>Pain Relief</span><span>Aromatherapy</span><span>Body Care</span><span>Outdoor Essentials</span><span>Family Wellness</span>
     </section>
 
-    <section id="about" class="brand-story founder-spotlight">
-        <div class="story-photo-card founder-photo-card">
-            <img src="<?php echo esc_url($asset_base . 'founder-wendy-williams.jpg'); ?>" alt="Wendy Williams, founder and owner of Releve Brands">
-            <div class="founder-badge">
-                <strong>Wendy Williams</strong>
-                <span>Founder &amp; Owner</span>
-            </div>
-        </div>
-        <div>
-            <p class="eyebrow">About Releve • Founder Story</p>
-            <h2>Meet Wendy Williams, the founder behind Releve Brands.</h2>
-            <p>In August 2016, Wendy Williams started searching for safe anti-bacterial products for her family. She researched the effects of natural ingredients and began experimenting in her kitchen until she created products with the results she was looking for.</p>
-            <p>After sharing her products with friends and family, their response encouraged her to start Releve Brands. In September 2018, after researching the anti-inflammatory and pain-relieving properties of CBD, Wendy began incorporating CBD isolate into select products and found it enhanced and accelerated the effects.</p>
-            <p>Wendy built Releve while balancing entrepreneurship and life as a single mother, growing the brand through trade shows, customer referrals, e-commerce, and a full portfolio of natural, safe, and effective health and wellness products.</p>
-            <div class="story-points">
-                <span>Family owned</span>
-                <span>Kitchen-born recipes</span>
-                <span>Humble, Texas</span>
-            </div>
-            <a class="button primary" href="about.html">Read Wendy’s Story</a>
-        </div>
-    </section>
 
     <section id="future-lineup" class="future-section-head">
         <p class="eyebrow">Current Releve Lineup</p>
@@ -114,6 +92,29 @@ $products = [
             <img src="<?php echo esc_url($asset_base . 'products-web/shower-steamer-spray.jpg'); ?>" alt="Shower Steamer Spray">
             <img src="<?php echo esc_url($asset_base . 'products-web/essential-oil-inhalers.jpg'); ?>" alt="Essential Oil Inhalers">
             <img src="<?php echo esc_url($asset_base . 'products-web/bug-spray.jpg'); ?>" alt="Bug Spray">
+        </div>
+    </section>
+
+    <section id="about" class="brand-story founder-spotlight founder-lower">
+        <div>
+            <p class="eyebrow">About Releve • Founder Story</p>
+            <h2>Meet Wendy Williams, the founder behind Releve Brands.</h2>
+            <p>In August 2016, Wendy Williams started searching for safe anti-bacterial products for her family. She researched the effects of natural ingredients and began experimenting in her kitchen until she created products with the results she was looking for.</p>
+            <p>After sharing her products with friends and family, their response encouraged her to start Releve Brands. In September 2018, after researching the anti-inflammatory and pain-relieving properties of CBD, Wendy began incorporating CBD isolate into select products and found it enhanced and accelerated the effects.</p>
+            <p>Wendy built Releve while balancing entrepreneurship and life as a single mother, growing the brand through trade shows, customer referrals, e-commerce, and a full portfolio of natural, safe, and effective health and wellness products.</p>
+            <div class="story-points">
+                <span>Family owned</span>
+                <span>Kitchen-born recipes</span>
+                <span>Humble, Texas</span>
+            </div>
+            <a class="button primary" href="about.html">Read Wendy’s Story</a>
+        </div>
+        <div class="story-photo-card founder-photo-card screenshot-photo-card">
+            <img src="<?php echo esc_url($asset_base . 'founder-wendy-screenshot.jpg'); ?>" alt="Wendy Williams, founder and owner of Releve Brands">
+            <div class="founder-badge">
+                <strong>Wendy Williams</strong>
+                <span>Founder &amp; Owner</span>
+            </div>
         </div>
     </section>
 

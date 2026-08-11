@@ -383,3 +383,36 @@ body {
   .founder-photo-card,
   .founder-photo-card img { min-height: 420px; }
 }
+
+/* v2.5: move Wendy lower, reduce clunky portrait weight, use screenshot photo */
+.founder-lower {
+  margin-top: clamp(3rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, .72fr) !important;
+  align-items: center;
+}
+.founder-lower .founder-photo-card {
+  min-height: 430px;
+  max-width: 460px;
+  justify-self: center;
+  border-radius: 1.45rem;
+}
+.founder-lower .founder-photo-card img {
+  min-height: 430px;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center top;
+}
+.founder-lower .founder-badge {
+  left: .8rem;
+  right: .8rem;
+  bottom: .8rem;
+  padding: .85rem;
+}
+.founder-lower h2 {
+  max-width: 12ch;
+}
+@media(max-width:900px){
+  .founder-lower { grid-template-columns:1fr !important; }
+  .founder-lower .founder-photo-card { max-width: 100%; min-height: 360px; }
+  .founder-lower .founder-photo-card img { min-height: 360px; max-height: 430px; }
+}
