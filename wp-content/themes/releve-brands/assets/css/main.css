@@ -491,3 +491,25 @@ body {
 }
 .contact-card h3 { margin-top: 0; }
 @media(max-width:850px){ .contact-section { grid-template-columns:1fr; } }
+
+/* v2.8: tighter Wendy crop, no visible frame/empty screenshot space */
+.founder-lower .founder-photo-card,
+.founder-lower .screenshot-photo-card {
+  max-width: 440px;
+  min-height: 575px;
+  aspect-ratio: 3 / 4;
+}
+.founder-lower .founder-photo-card img,
+.founder-lower .screenshot-photo-card img {
+  min-height: 575px;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1.03);
+  transform-origin: center center;
+}
+@media(max-width:900px){
+  .founder-lower .founder-photo-card,
+  .founder-lower .screenshot-photo-card { min-height: 500px; }
+  .founder-lower .founder-photo-card img,
+  .founder-lower .screenshot-photo-card img { min-height: 500px; }
+}

@@ -77,7 +77,7 @@ $products = [
             <a class="button primary" href="about.html">Read Wendy’s Story</a>
         </div>
         <div class="story-photo-card founder-photo-card screenshot-photo-card">
-            <img src="<?php echo esc_url($asset_base . 'founder-wendy-tight.jpg'); ?>" alt="Wendy Williams, founder and owner of Releve Brands">
+            <img src="<?php echo esc_url($asset_base . 'founder-wendy-final.jpg'); ?>" alt="Wendy Williams, founder and owner of Releve Brands">
             <div class="founder-badge">
                 <strong>Wendy Williams</strong>
                 <span>Founder &amp; Owner</span>
