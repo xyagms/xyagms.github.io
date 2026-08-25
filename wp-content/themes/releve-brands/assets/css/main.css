@@ -513,3 +513,24 @@ body {
   .founder-lower .founder-photo-card img,
   .founder-lower .screenshot-photo-card img { min-height: 500px; }
 }
+
+/* v2.9 Frances hero typography refinement: smaller, classier, more elegant */
+.future-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.65rem, 5.2vw, 5.25rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  max-width: 13.5ch;
+  text-wrap: balance;
+}
+.future-hero-copy {
+  max-width: 46rem;
+}
+@media (max-width: 650px) {
+  .future-hero h1 {
+    font-size: clamp(2.35rem, 10.5vw, 3.85rem);
+    line-height: 1.08;
+    max-width: 12.5ch;
+  }
+}
