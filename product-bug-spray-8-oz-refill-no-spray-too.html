@@ -47,7 +47,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .woocommerce form .form-row .required { visibility: visible; }
 /*# sourceURL=woocommerce-inline-inline-css */
 </style>
-<link rel='stylesheet' id='releve-brands-main-css' href='./wp-content/themes/releve-brands/assets/css/main.css?ver=2.9.0' media='all' />
+<link rel='stylesheet' id='releve-brands-main-css' href='./wp-content/themes/releve-brands/assets/css/main.css?ver=3.0.0' media='all' />
 <script id="wc-add-to-cart-js-extra">
 var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"./cart/","is_cart":"","cart_redirect_after_add":"no"};
 //# sourceURL=wc-add-to-cart-js-extra
@@ -101,6 +101,34 @@ var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/
   </aside>
 </main>
 
+<section class='releve-review-prompt' id='reviews'>
+  <div>
+    <p class='eyebrow'>Customer Reviews</p>
+    <h2>Tried Bug Spray 8 oz Refill?</h2>
+    <p>After purchase, customers can leave a star rating and quick review. Wendy can respond directly from the WordPress admin review area.</p>
+  </div>
+  <a class='button primary' href='#review-form'>Leave a Review</a>
+</section>
+<section class='woocommerce' id='review-form' style='max-width:1180px;margin:0 auto 3rem;'>
+  <div id='reviews'>
+    <div id='comments'>
+      <h2>Reviews + Stars</h2>
+      <p>Live customer reviews will appear here after customers try the product.</p>
+      <ol class='commentlist'>
+        <li class='review'><div class='comment-text'><div class='star-rating'>★★★★★</div><p><strong>Verified owner review example</strong></p><p>Customer feedback and Wendy’s replies will show in this section on the live WooCommerce site.</p></div></li>
+      </ol>
+    </div>
+    <div id='review_form_wrapper'>
+      <div id='review_form'>
+        <span id='reply-title'>Leave a review</span>
+        <p><label>Your rating</label><span class='stars'>★★★★★</span></p>
+        <p><label>Your review</label><textarea placeholder='Share how the product worked for you'></textarea></p>
+        <p><button type='button'>Submit Review</button></p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
     <div>
         <img class="footer-logo" src="./wp-content/themes/releve-brands/assets/img/releve/logo-white.png" alt="Releve Brands">
@@ -134,7 +162,7 @@ var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/
 			document.body.className = c;
 		})();
 	</script>
-	<script id="releve-brands-main-js" src="./wp-content/themes/releve-brands/assets/js/main.js?ver=2.8.0"></script>
+	<script id="releve-brands-main-js" src="./wp-content/themes/releve-brands/assets/js/main.js?ver=3.0.0"></script>
 <script id="wc-order-attribution-js-extra">
 var wc_order_attribution = {"params":{"lifetime":1.0000000000000001e-5,"session":30,"base64":false,"ajaxurl":"./wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
 //# sourceURL=wc-order-attribution-js-extra
