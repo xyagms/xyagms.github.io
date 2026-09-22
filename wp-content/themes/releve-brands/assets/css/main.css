@@ -638,3 +638,56 @@ body {
 @media(max-width:700px){
   .releve-review-prompt { align-items: flex-start; flex-direction: column; }
 }
+
+/* v3.5 product contrast cleanup: blue-gray card background, darker than white labels but not harsh */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article,
+.product-gallery figure,
+.product-card,
+.product-image,
+.product-photo,
+.product-thumb {
+  background: linear-gradient(145deg, #a9b8c8 0%, #c5d0dc 100%) !important;
+  border: 1px solid rgba(6,22,46,.20) !important;
+  box-shadow: 0 26px 68px rgba(6,22,46,.24) !important;
+}
+.future-product-grid article::before,
+.future-product-grid article::after,
+.woocommerce ul.products li.product::before,
+.woocommerce ul.products li.product::after,
+.future-main-product::before,
+.future-main-product::after,
+.future-side-products article::before,
+.future-side-products article::after,
+.product-gallery figure::before,
+.product-gallery figure::after,
+.product-card::before,
+.product-card::after,
+.product-image::before,
+.product-image::after,
+.product-photo::before,
+.product-photo::after,
+.product-thumb::before,
+.product-thumb::after {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img,
+.product-gallery img,
+.product-card img,
+.product-image img,
+.product-photo img,
+.product-thumb img {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  filter: drop-shadow(0 24px 30px rgba(0,0,0,.34)) !important;
+}
