@@ -639,6 +639,209 @@ body {
   .releve-review-prompt { align-items: flex-start; flex-direction: column; }
 }
 
+/* v2.6 finish-day routing/product detail polish */
+.shop-card-actions { display:flex; flex-wrap:wrap; gap:.65rem; align-items:center; margin-top:.8rem; }
+.shop-card-actions .button { flex:1 1 145px; }
+.product-detail-page .homepage-review-box { max-width:1280px; margin:0 auto clamp(2rem,5vw,4rem); }
+.product-tabs .policy-card p,
+.product-tabs .product-directions p { color:var(--muted); }
+.contact-page-section { max-width:1180px; margin:clamp(1rem,4vw,3rem) auto; }
+
+/* v2.8 product photo float treatment: remove inner white image boxes */
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img,
+.product-gallery figure,
+.product-gallery img {
+  background: transparent !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  filter: drop-shadow(0 24px 28px rgba(6,22,46,.20)) drop-shadow(0 0 18px rgba(98,230,255,.12));
+}
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article {
+  border-color: rgba(46,125,246,.28);
+}
+.product-gallery figure {
+  border: 1px solid rgba(46,125,246,.22);
+  box-shadow: inset 0 0 0 1px rgba(98,230,255,.10), 0 20px 60px rgba(6,22,46,.08);
+}
+
+/* v2.9 clean product cards: white card, no double outline */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article {
+  background: #fff !important;
+  border: 1px solid rgba(18,60,124,.14) !important;
+  box-shadow: 0 22px 60px rgba(6,22,46,.10) !important;
+}
+.future-main-product:after,
+.future-side-products article:after,
+.future-product-grid article:after {
+  display: none !important;
+}
+.future-product-grid article:hover,
+.woocommerce ul.products li.product:hover {
+  box-shadow: 0 28px 72px rgba(6,22,46,.15) !important;
+}
+
+/* v3.0 true floating product photos: transparent images inside one soft white card */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article {
+  background: rgba(248,251,255,.94) !important;
+  border: 1px solid rgba(18,60,124,.12) !important;
+  box-shadow: 0 20px 58px rgba(6,22,46,.10) !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 24px 26px rgba(6,22,46,.18)) !important;
+}
+.product-gallery figure {
+  background: rgba(248,251,255,.94) !important;
+  border: 1px solid rgba(18,60,124,.12) !important;
+  box-shadow: 0 20px 58px rgba(6,22,46,.10) !important;
+}
+
+/* v3.1 darker single product card so white labels stand out */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article,
+.product-gallery figure {
+  background: linear-gradient(145deg, #dfe8f3, #edf3f8) !important;
+  border: 1px solid rgba(18,60,124,.16) !important;
+  box-shadow: 0 20px 58px rgba(6,22,46,.12) !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img,
+.product-gallery img {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 22px 24px rgba(6,22,46,.20)) !important;
+}
+
+/* v3.2 high contrast product cards: stop white-on-white */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article,
+.product-gallery figure {
+  background: linear-gradient(145deg, #aebfd3, #cbd8e6) !important;
+  border: 1px solid rgba(6,22,46,.18) !important;
+  box-shadow: 0 24px 64px rgba(6,22,46,.16) !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img,
+.product-gallery img {
+  filter: drop-shadow(0 24px 26px rgba(6,22,46,.26)) !important;
+}
+
+/* v3.3 force all product cards dark enough for white product labels */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article,
+.product-gallery figure {
+  background: linear-gradient(145deg, #6f8094, #8fa0b3) !important;
+  border: 1px solid rgba(255,255,255,.28) !important;
+  box-shadow: 0 26px 70px rgba(6,22,46,.22) !important;
+}
+.future-product-grid article p,
+.future-product-grid article h3,
+.future-product-grid article .product-price,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product .price,
+.future-main-product h3,
+.future-main-product p,
+.future-side-products h3,
+.future-side-products p {
+  color: #06162e !important;
+}
+.future-product-grid article > span {
+  color: #123c7c !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img,
+.product-gallery img {
+  background: transparent !important;
+  filter: drop-shadow(0 26px 30px rgba(0,0,0,.34)) !important;
+}
+
+/* v3.4 FINAL: dark slate product surfaces, no white-on-white anywhere */
+.future-product-grid article,
+.woocommerce ul.products li.product,
+.future-main-product,
+.future-side-products article,
+.product-gallery figure,
+.product-card,
+.product-image,
+.product-photo,
+.product-thumb {
+  background: linear-gradient(145deg, #26384c 0%, #3c5067 100%) !important;
+  border: 1px solid rgba(255,255,255,.20) !important;
+  box-shadow: 0 28px 76px rgba(0,0,0,.32) !important;
+}
+.future-product-grid article::before,
+.future-product-grid article::after,
+.woocommerce ul.products li.product::before,
+.woocommerce ul.products li.product::after,
+.future-main-product::before,
+.future-main-product::after,
+.future-side-products article::before,
+.future-side-products article::after,
+.product-gallery figure::before,
+.product-gallery figure::after {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.future-product-grid img,
+.woocommerce ul.products li.product a img,
+.future-main-product img,
+.future-side-products img,
+.future-orbit img,
+.product-gallery img,
+.product-card img,
+.product-image img,
+.product-photo img,
+.product-thumb img {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 28px 32px rgba(0,0,0,.42)) !important;
+}
+
 /* v3.5 product contrast cleanup: blue-gray card background, darker than white labels but not harsh */
 .future-product-grid article,
 .woocommerce ul.products li.product,
@@ -691,3 +894,48 @@ body {
   padding: 0 !important;
   filter: drop-shadow(0 24px 30px rgba(0,0,0,.34)) !important;
 }
+
+/* v3.6 emergency shop fix: dark product cards + readable 12-product static grid */
+.releve-shop-grid.future-product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 1.35rem !important;
+}
+.releve-shop-grid.future-product-grid article,
+.shop-main .woocommerce ul.products li.product {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100% !important;
+  background: radial-gradient(circle at 50% 0%, rgba(98,230,255,.18), transparent 38%), linear-gradient(145deg, #17283e 0%, #253b56 55%, #324b68 100%) !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+  box-shadow: 0 28px 70px rgba(6,22,46,.36) !important;
+  color: #fff !important;
+}
+.releve-shop-grid.future-product-grid article > span,
+.shop-main .woocommerce ul.products li.product .price {
+  color: #7ee8ff !important;
+}
+.releve-shop-grid.future-product-grid article h3,
+.releve-shop-grid.future-product-grid article p,
+.releve-shop-grid.future-product-grid article .product-price,
+.shop-main .woocommerce ul.products li.product .woocommerce-loop-product__title {
+  color: #fff !important;
+}
+.releve-shop-grid.future-product-grid article p:not(.product-price) {
+  color: rgba(255,255,255,.84) !important;
+}
+.releve-shop-grid.future-product-grid img,
+.shop-main .woocommerce ul.products li.product a img {
+  width: 100% !important;
+  height: 260px !important;
+  object-fit: contain !important;
+  margin: .25rem 0 1rem !important;
+  padding: .55rem !important;
+  background: rgba(3,13,28,.28) !important;
+  border-radius: 1.1rem !important;
+  filter: drop-shadow(0 24px 30px rgba(0,0,0,.46)) !important;
+}
+.releve-shop-grid .shop-card-actions { margin-top: auto !important; padding-top: .85rem !important; }
+.releve-shop-grid .button.secondary { background: rgba(255,255,255,.94) !important; color: #123c7c !important; }
+.releve-shop-grid .button.primary { background: linear-gradient(135deg,#62e6ff,#2e7df6) !important; color: #041226 !important; }
+@media(max-width:1050px){ .releve-shop-grid.future-product-grid{ grid-template-columns: repeat(2,minmax(0,1fr)) !important; } }
+@media(max-width:650px){ .releve-shop-grid.future-product-grid{ grid-template-columns: 1fr !important; } }
